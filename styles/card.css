@@ -1,0 +1,241 @@
+.card-workshop {
+  background: url("https://images.pexels.com/photos/1181395/pexels-photo-1181395.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: bottom;
+}
+
+.card-workshop .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.card-workshop .head hr {
+  border-color: #fef5df;
+}
+
+.card-workshop .button-link {
+  border-color: #fef5df;
+  color: #fef5df;
+}
+
+.card-workshop .button-link:hover {
+  background-color: #fef5df;
+  color: black;
+}
+
+.card-container:hover {
+  background-size: 110%;
+}
+
+.card-container:hover h1 {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.card-competitions {
+  background: url("https://images.pexels.com/photos/5691866/pexels-photo-5691866.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: bottom;
+}
+
+.card-competitions .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.card-competitions .head hr {
+  border-color: #74797d;
+}
+
+.card-competitions .button-link {
+  border-color: #74797d;
+  color: #74797d;
+}
+
+.card-competitions .button-link:hover {
+  background-color: #74797d;
+  color: white;
+}
+
+.card-funevents {
+  background: url("https://images.pexels.com/photos/3811011/pexels-photo-3811011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.card-funevents .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.card-funevents .head hr {
+  border-color: #e8b07b;
+}
+
+.card-funevents .button-link {
+  border-color: #e8b07b;
+  color: #e8b07b;
+}
+
+.card-funevents .button-link:hover {
+  background-color: #e8b07b;
+  color: black;
+}
+
+.card-techTalks {
+  background: url("https://images.pexels.com/photos/328009/pexels-photo-328009.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.card-techTalks .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.card-techTalks .head hr {
+  border-color: #959f57;
+}
+
+.card-techTalks .button-link {
+  border-color: #959f57;
+  color: #959f57;
+}
+
+.card-techTalks .button-link:hover {
+  background-color: #959f57;
+  color: black;
+}
+
+.card-container {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background-color: black;
+  background-size: 100%;
+  -webkit-transition: background-size 0.7s;
+  transition: background-size 0.7s;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 2fr 2fr 2fr;
+      grid-template-rows: 1fr 2fr 2fr 2fr;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif;
+}
+
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+
+.card-heading {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  width: 100%;
+}
+
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.head hr {
+  display: block;
+  width: 0;
+  border: none;
+  border-bottom: solid 2px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.button-link {
+  padding: 8px;
+  border: 1px solid;
+}
+
+.button-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cart {
+  margin-top: 16px;
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.cart i {
+  font-size: 16px;
+}
+
+.cart span {
+  margin-left: 10px;
+}
+
+.card-container:hover .overlay {
+  opacity: 1;
+}
+
+.card-container:hover .overlay .head {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.card-container:hover .overlay hr {
+  width: 75px;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.card-container:hover .overlay .price {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  opacity: 1;
+}
+
+.card-container:hover .overlay .cart {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+  opacity: 1;
+}
+/*# sourceMappingURL=card.css.map */
