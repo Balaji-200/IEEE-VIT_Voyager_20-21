@@ -8,23 +8,23 @@
       agenda: [
         {
           range: ["February 27th 2021, 09:00 am", "March 6th 2021, 08:59 am"],
-          display: { h: 9, m: "", a: "am", date: "3rd March" },
-          desc: "Web-quiz",
+          display: { h: 6, m: "30", a: "pm", date: "3rd March" },
+          desc: "Webseries quiz",
         },
         {
           range: ["March 6th 2021, 09:00 am", "March 13th 2021, 08:59 am"],
-          display: { h: 9, m: "", a: "am", date: "6th March" },
-          desc: "Webinar",
+          display: { h: 4, m: "", a: "pm", date: "6th March" },
+          desc: "Machine Learning Interpretation (Webinar)",
         },
         {
           range: ["March 13th 2021, 09:00 am", "March 17th 2021, 08:59 am"],
-          display: { h: 9, m: "", a: "am", date: "13th March" },
-          desc: "Webinar",
+          display: { h: 4, m: "", a: "pm", date: "13th March" },
+          desc: "CyberSecurity (Webinar)",
         },
         {
           range: ["March 17th 2021, 09:00 am", "March 20th 2021, 08:59 am"],
-          display: { h: 9, m: "", a: "am", date: "17th March" },
-          desc: "Skribble",
+          display: { h: 6, m: "30", a: "pm", date: "17th March" },
+          desc: "Wriggle Skribble",
         },
         {
           range: ["March 20th 2021, 09:00 am", "March 27th 2021, 08:59 am"],
@@ -33,7 +33,7 @@
         },
         {
           range: ["March 27th 2021, 09:00 am", "March 28th 2021, 08:59 am"],
-          display: { h: 9, m: "", a: "am", date: "27th March" },
+          display: { h: 10, m: "", a: "am", date: "27th March" },
           desc: "Shark Tank",
         },
         {
@@ -43,12 +43,12 @@
         },
         {
           range: ["April 3rd 2021, 09:00 am", "April 4th 2021, 08:59 am"],
-          display: { h: 9, m: "", a: "am", date: "3rd April" },
+          display: { h: 2, m: "", a: "pm", date: "3rd April" },
           desc: "TYC Competition",
         },
         {
           range: ["April 4th 2021, 09:00 am", "April 5th 2021, 00:00 am"],
-          display: { h: 9, m: "", a: "am", date: "4th April" },
+          display: { h: 2, m: "", a: "pm", date: "4th April" },
           desc: "CodeAger",
         },
       ],
@@ -101,7 +101,7 @@
 
 
   let setTime = function () {
-    let now = moment("March 3rd 2021, 09:00 am", "MMMM Do YYYY, hh:mm a");
+    let now = moment();
     app.now = sked.now = numFromTime(
       moment(now).format("MMMM Do YYYY, hh:mm a")
     );
