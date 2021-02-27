@@ -1,5 +1,5 @@
 ((window) => {
-  let now = moment();
+  let now = moment("March 13th 2021, 09:00 am", "MMMM Do YYYY, hh:mm a");
 
   // JSON DATA
   let schedule = [
@@ -126,7 +126,7 @@
 
 
   let setTime = function () {
-    let now = moment();
+    let now = moment("March 13th 2021, 09:00 am", "MMMM Do YYYY, hh:mm a");
     app.now = sked.now = numFromTime(
       moment(now).format("MMMM Do YYYY, hh:mm a")
     );
