@@ -1,5 +1,5 @@
 ((window) => {
-  let now = moment("March 13th 2021, 09:00 am", "MMMM Do YYYY, hh:mm a");
+  let now = moment();
 
   // JSON DATA
   let schedule = [
@@ -7,7 +7,7 @@
       date: now,
       agenda: [
         {
-          range: ["March 3rd 2021, 09:00 am", "March 6th 2021, 08:59 am"],
+          range: ["February 27th 2021, 09:00 am", "March 6th 2021, 08:59 am"],
           display: { h: 9, m: "", a: "am", date: "3rd March" },
           desc: "Web-quiz",
         },
@@ -54,33 +54,8 @@
       ],
     },
   ];
-
-  let countDownTimer = () => {
-    const start = moment("March 2nd 2021, 09:00 am", "MMMM Do YYYY, hh:mm a");
-    var counter;
-    // var now = moment();
-    if (moment.duration(start.diff(now)).asSeconds() > 0) {
-      document.querySelector("ul#schedule").style.display = 'none'
-      counter = setInterval(() => {
-        const countDown = document.querySelector("#countDown p");
-        now = moment();
-        let diff = moment.duration(start.diff(now));
-        let days = parseInt(diff.days())
-        let hours = parseInt(diff.hours())
-        let minutes = parseInt(diff.minutes())
-        let seconds = parseInt(diff.seconds())
-        countDown.innerHTML = `${days} Days <br>${hours} Hours <br>${minutes} Minutes <br>${seconds} Seconds`
-      }, 1000);
-    } else {
-      document.querySelector("ul#schedule").style.display = 'block';
-      const countDown = document.querySelector("#countDown");
-      countDown.style.display = 'none'
-      clearInterval(counter);
-    }
-  };
-  countDownTimer();
   let numFromTime = (time) => {
-    let ref = moment("February 1st 2021, 00:00 am", "MMMM Do YYYY, hh:mm a");
+    let ref = moment();
     let t = moment(time, "MMMM Do YYYY, hh:mm a");
     let set = time.split(/[.:]/);
     return t.diff(ref, "minutes");
@@ -126,7 +101,7 @@
 
 
   let setTime = function () {
-    let now = moment("March 13th 2021, 09:00 am", "MMMM Do YYYY, hh:mm a");
+    let now = moment("March 3rd 2021, 09:00 am", "MMMM Do YYYY, hh:mm a");
     app.now = sked.now = numFromTime(
       moment(now).format("MMMM Do YYYY, hh:mm a")
     );
