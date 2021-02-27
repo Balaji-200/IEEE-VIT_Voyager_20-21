@@ -9,23 +9,27 @@
   position: relative;
   border-radius: 50%;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72), -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
-          box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72), -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+  -webkit-box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72),
+    -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
+  box-shadow: 0 0 60px -20px rgba(255, 189, 3, 0.72),
+    -14px -15px 40px -10px rgba(255, 238, 191, 0.23);
 }
 
 .planet .mask {
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-box-shadow: inset -10px -10px 40px #251303, inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
-          box-shadow: inset -10px -10px 40px #251303, inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+  -webkit-box-shadow: inset -10px -10px 40px #251303,
+    inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
+  box-shadow: inset -10px -10px 40px #251303,
+    inset 10px 10px 30px -10px rgba(255, 204, 159, 0.6);
   border-radius: 50%;
 }
 
 .planet .background {
   -webkit-animation: translateBackground 40s infinite linear;
-          animation: translateBackground 40s infinite linear;
-  background: url(http://artem.anmedio.ru/dev/planet/mars.jpg) repeat-x;
+  animation: translateBackground 40s infinite linear;
+  background: url("http://artem.anmedio.ru/dev/planet/mars.jpg") repeat-x;
   width: 300px;
   height: 300px;
   position: absolute;
@@ -33,13 +37,13 @@
 }
 
 .planet .clouds {
-  background: url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
+  background: url("http://artem.anmedio.ru/dev/planet/clouds.png") repeat-x;
   width: 300px;
   height: 300px;
   position: absolute;
   border-radius: 50%;
   -webkit-animation: translateBackground 30s infinite linear;
-          animation: translateBackground 30s infinite linear;
+  animation: translateBackground 30s infinite linear;
   opacity: 0.4;
 }
 
@@ -49,7 +53,7 @@
   position: absolute;
   border-radius: 50%;
   -webkit-animation: rotatePlanet 150s infinite linear;
-          animation: rotatePlanet 150s infinite linear;
+  animation: rotatePlanet 150s infinite linear;
 }
 
 @-webkit-keyframes translateBackground {
@@ -73,22 +77,22 @@
 @-webkit-keyframes rotatePlanet {
   0% {
     -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   100% {
     -webkit-transform: rotateZ(-360deg);
-            transform: rotateZ(-360deg);
+    transform: rotateZ(-360deg);
   }
 }
 
 @keyframes rotatePlanet {
   0% {
     -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   100% {
     -webkit-transform: rotateZ(-360deg);
-            transform: rotateZ(-360deg);
+    transform: rotateZ(-360deg);
   }
 }
 
@@ -97,7 +101,9 @@
     width: 100px;
     height: 100px;
   }
-  .planet .background, .planet .clouds, .planet .wrap {
+  .planet .background,
+  .planet .clouds,
+  .planet .wrap {
     width: 100px;
     height: 100px;
   }
