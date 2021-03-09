@@ -7,47 +7,47 @@
       date: now,
       agenda: [
         {
-          range: ["February 27th 2021, 09:00 am", "March 6th 2021, 08:59 am"],
-          display: { h: 6, m: "30", a: "pm", date: "3rd March" },
+          range: ["February 27th 2021, 09:00 am", "March 3rd 2021, 08:59 pm"],
+          display: { h: 6, m: ":30", a: "pm", date: "3rd March" },
           desc: "Webseries quiz",
         },
         {
-          range: ["March 6th 2021, 09:00 am", "March 13th 2021, 08:59 am"],
+          range: ["March 3rd 2021, 09:00 pm", "March 6th 2021, 08:59 pm"],
           display: { h: 4, m: "", a: "pm", date: "6th March" },
           desc: "Machine Learning Interpretation (Webinar)",
         },
         {
-          range: ["March 13th 2021, 09:00 am", "March 17th 2021, 08:59 am"],
+          range: ["March 6th 2021, 09:00 pm", "March 13th 2021, 08:59 pm"],
           display: { h: 4, m: "", a: "pm", date: "13th March" },
           desc: "CyberSecurity (Webinar)",
         },
         {
-          range: ["March 17th 2021, 09:00 am", "March 20th 2021, 08:59 am"],
-          display: { h: 6, m: "30", a: "pm", date: "17th March" },
+          range: ["March 13th 2021, 09:00 pm", "March 17th 2021, 08:59 pm"],
+          display: { h: 6, m: ":30", a: "pm", date: "17th March" },
           desc: "Wriggle Skribble",
         },
         {
-          range: ["March 20th 2021, 09:00 am", "March 27th 2021, 08:59 am"],
+          range: ["March 17th 2021, 09:00 pm", "March 20th 2021, 08:59 pm"],
           display: { h: 9, m: "", a: "am", date: "20th March" },
           desc: "Home Automation",
         },
         {
-          range: ["March 27th 2021, 09:00 am", "March 28th 2021, 08:59 am"],
+          range: ["March 20th 2021, 09:00 pm", "March 27th 2021, 08:59 pm"],
           display: { h: 10, m: "", a: "am", date: "27th March" },
           desc: "Shark Tank",
         },
         {
-          range: ["March 28th 2021, 09:00 am", "April 3rd 2021, 08:59 am"],
+          range: ["March 27th 2021, 09:00 pm", "April 3rd 2021, 08:59 pm"],
           display: { h: 9, m: "", a: "am", date: "28th March" },
           desc: "P5.js",
         },
         {
-          range: ["April 3rd 2021, 09:00 am", "April 4th 2021, 08:59 am"],
+          range: ["April 3rd 2021, 09:00 pm", "April 4th 2021, 08:59 pm"],
           display: { h: 2, m: "", a: "pm", date: "3rd April" },
           desc: "TYC Competition",
         },
         {
-          range: ["April 4th 2021, 09:00 am", "April 5th 2021, 00:00 am"],
+          range: ["April 4th 2021, 09:00 pm", "April 5th 2021, 00:00 am"],
           display: { h: 2, m: "", a: "pm", date: "4th April" },
           desc: "CodeAger",
         },

@@ -23,15 +23,6 @@ aside {
   }
 }
 
-#countDown {
-  height: 100%;
-  width: 100%;
-}
-
-#countDown p {
-  margin: 24px;
-}
-
 main {
   position: relative;
   -webkit-box-flex: 1;
